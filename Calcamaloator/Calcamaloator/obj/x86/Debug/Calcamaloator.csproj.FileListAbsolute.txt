@@ -1,0 +1,11 @@
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\MainWindow.baml
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\MainWindow.g.cs
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\App.g.cs
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator_MarkupCompile.cache
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.g.resources
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.Properties.Resources.resources
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.csproj.GenerateResource.Cache
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\bin\Debug\Calcamaloator.exe
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\bin\Debug\Calcamaloator.pdb
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.exe
+c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.pdb
