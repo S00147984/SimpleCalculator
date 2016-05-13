@@ -6,3 +6,7 @@
          
     </Application.Resources>
 </Application>
+    
+<PropertyGroup Condition=" MSBuild Calcamaloator.sln /property:Configuration=Release /property:Platform=x64 ">
+    
+</PropertyGroup>
