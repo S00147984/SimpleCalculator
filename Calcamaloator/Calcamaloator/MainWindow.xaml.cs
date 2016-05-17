@@ -11,117 +11,60 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+
 
 namespace Calcamaloator
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        double value1;
-        double value2;
-        double result;
-        string operater;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        protected void btnNumClick(object sender, EventArgs e)
+        protected void btnSumClick(object sender, EventArgs e)
         {
             var myButton = (Button)sender;
 
-            tbxSum.Text += myButton.Content.ToString();
-        }
-
-        protected void btnOperatorClick(object sender, EventArgs e)
-        {
-            if (tbxSum.Text != "")
+            if (myButton.Content.ToString() == "=")
             {
-                value1 = Convert.ToDouble(tbxSum.Text);
-                tbxSum.Text = "";
+
+                DataTable dt = new DataTable();
+                string s = tbxSum.Text;
+
+                if (s.Contains("("))
+                {
+                    s = s.Replace("(", "*(");
+                }
+
+                try
+                {
+                    var v = dt.Compute(s, "");
+                    tbkSum.Text = s + "=" + v.ToString();
+
+                    tbxSum.Text = v.ToString();
+                }
+                    
+                catch
+                {
+                    MessageBox.Show("Invalid Sum");
+                }
             }
 
-            var myButton = (Button)sender;
-            operater = myButton.Content.ToString();
-
-            if (value1 == 0 && operater == "-")
+            else if (myButton.Content.ToString() == "CE")
             {
-                tbxSum.Text = operater;
-            }
-
-            if (value1 != 0)
-            {
-                tbkSum.Text = value1.ToString() + ' ' + operater;
-            }
-
-        }
-
-        protected void btnEquaClick(object sender, EventArgs e)
-        {
-            if (value1 == 0)
-            {
-                tbxSum.Text = "";
-                tbkSum.Text = value1.ToString() + ' ' + '=' + ' ' + value1.ToString();
+                tbxSum.Text = String.Empty;
+                tbkSum.Text = String.Empty;
             }
 
             else
             {
-                value2 = Convert.ToDouble(tbxSum.Text);
-                tbxSum.Text = " ";
-
-                if (operater == "+")
-                {
-                    result = value1 + value2;
-                }
-
-                if (operater == "-")
-                {
-                    result = value1 - value2;
-                }
-
-                if (operater == "x")
-                {
-                    result = value1 * value2;
-                }
-
-                if (operater == "/")
-                {
-                    result = value1 / value2;
-                }
-
-                tbkSum.Text = value1.ToString() + ' ' + operater + ' ' 
-                    + value2.ToString() + ' ' + '=' + ' ' + result.ToString();
-                tbxSum.Text = "";
-
-                value1 = result;
-            }
+                tbxSum.Text += myButton.Content.ToString();
+            }      
+            
         }
 
-        private void btnCE_Click(object sender, RoutedEventArgs e)
-        {
-            tbxSum.Text = "";
-            tbkSum.Text = "";
-            value1 = 0;
-            value2 = 0;
-            operater = "";
-        }
-
-        private void btnPerc_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBrackClose_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBrackOpen_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
