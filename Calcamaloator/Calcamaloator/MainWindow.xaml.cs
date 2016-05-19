@@ -18,7 +18,7 @@ namespace Calcamaloator
 {
     public partial class MainWindow : Window
     {
-
+        double lastGoodValue = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -43,13 +43,15 @@ namespace Calcamaloator
                 {
                     var v = dt.Compute(s, "");
                     tbkSum.Text = s + "=" + v.ToString();
-
+                    lastGoodValue = Convert.ToDouble(v);
                     tbxSum.Text = v.ToString();
                 }
                     
                 catch
                 {
-                    MessageBox.Show("Invalid Sum");
+                    tbxSum.Text = lastGoodValue.ToString();
+                    
+                    MessageBox.Show("Invalid Sum, reset to previous valid result");
                 }
             }
 
@@ -57,6 +59,7 @@ namespace Calcamaloator
             {
                 tbxSum.Text = String.Empty;
                 tbkSum.Text = String.Empty;
+                lastGoodValue = 0;
             }
 
             else

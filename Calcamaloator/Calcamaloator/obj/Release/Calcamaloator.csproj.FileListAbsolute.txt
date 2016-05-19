@@ -9,3 +9,5 @@ C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamalo
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.csproj.GenerateResource.Cache
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.exe
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.pdb
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\bin\Release\teamcity.exe
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.csprojResolveAssemblyReference.cache
