@@ -113,15 +113,5 @@ namespace Calcamaloator
         {
 
         }
-
-        private void btnBrackClose_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnBrackOpen_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

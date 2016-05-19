@@ -9,3 +9,5 @@ c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calca
 c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\bin\Debug\Calcamaloator.pdb
 c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.exe
 c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.pdb
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.exe
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.pdb
