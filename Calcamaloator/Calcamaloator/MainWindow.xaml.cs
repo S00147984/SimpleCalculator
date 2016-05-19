@@ -18,6 +18,8 @@ namespace Calcamaloator
 {
     public partial class MainWindow : Window
     {
+        //bool lastGoodValueSet = false;
+        double lastGoodValue = 0;
 
         public MainWindow()
         {
@@ -30,7 +32,6 @@ namespace Calcamaloator
 
             if (myButton.Content.ToString() == "=")
             {
-
                 DataTable dt = new DataTable();
                 string s = tbxSum.Text;
 
@@ -43,13 +44,20 @@ namespace Calcamaloator
                 {
                     var v = dt.Compute(s, "");
                     tbkSum.Text = s + "=" + v.ToString();
-
+                    lastGoodValue = Convert.ToDouble(v);
+                    //lastGoodValueSet = true;
                     tbxSum.Text = v.ToString();
                 }
-                    
+
                 catch
                 {
-                    MessageBox.Show("Invalid Sum");
+                    //if (lastGoodValueSet)
+                        tbxSum.Text = lastGoodValue.ToString();
+
+                    //lastGoodValueSet = false;
+
+                    MessageBox.Show("Invalid Sum, reset to previous valid result");
+                    
                 }
             }
 
@@ -57,6 +65,7 @@ namespace Calcamaloator
             {
                 tbxSum.Text = String.Empty;
                 tbkSum.Text = String.Empty;
+                lastGoodValue = 0;
             }
 
             else
