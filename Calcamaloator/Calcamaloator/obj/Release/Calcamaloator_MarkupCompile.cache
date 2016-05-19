@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\
 Calcamaloator
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\App.xaml
 11151548125
 

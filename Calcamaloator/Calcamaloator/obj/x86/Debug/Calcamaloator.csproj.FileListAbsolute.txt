@@ -11,3 +11,12 @@ c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calca
 c:\users\conor.stewart\documents\visual studio 2010\Projects\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.pdb
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.exe
 C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.pdb
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\bin\Debug\Calcamaloator.exe
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\bin\Debug\Calcamaloator.pdb
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\MainWindow.baml
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\MainWindow.g.cs
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\App.g.cs
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator_MarkupCompile.cache
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.g.resources
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.Properties.Resources.resources
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\x86\Debug\Calcamaloator.csproj.GenerateResource.Cache

@@ -1,0 +1,13 @@
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\MainWindow.baml
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\MainWindow.g.cs
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\App.g.cs
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator_MarkupCompile.cache
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\bin\Release\Calcamaloator.exe
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\bin\Release\Calcamaloator.pdb
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.g.resources
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.Properties.Resources.resources
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.csproj.GenerateResource.Cache
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.exe
+C:\Users\conor.stewart\Documents\GitHub\SimpleCalculator\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.pdb
+C:\Users\conor.stewart\Downloads\SimpleCalculator-master\SimpleCalculator-master\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.exe
+C:\Users\conor.stewart\Downloads\SimpleCalculator-master\SimpleCalculator-master\Calcamaloator\Calcamaloator\obj\Release\Calcamaloator.pdb
