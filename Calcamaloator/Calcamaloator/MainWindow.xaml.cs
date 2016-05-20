@@ -18,40 +18,70 @@ namespace Calcamaloator
 {
     public partial class MainWindow : Window
     {
-        double lastGoodValue = 0;
         public MainWindow()
         {
             InitializeComponent();
+
+            if (tbxSum.Text == "")
+            {
+                btnDiv.IsEnabled = false;
+                btnMult.IsEnabled = false;
+            }
         }
 
         protected void btnSumClick(object sender, EventArgs e)
         {
             var myButton = (Button)sender;
+            int pos = tbxSum.Text.Length;
+
+            if (pos == 0 && myButton.Content.ToString() == "BK")
+            {
+                btnDiv.IsEnabled = false;
+                btnMult.IsEnabled = false;
+            }
+
+            btnDiv.IsEnabled = true;
+            btnMult.IsEnabled = true;
+
+            if (pos > 0)
+            {
+
+                if ((tbxSum.Text[pos - 1] == '/' || tbxSum.Text[pos - 1] == '*') &&
+                    (myButton.Content.ToString() == "/" || myButton.Content.ToString() == "*"))
+                {
+                    int location = tbxSum.Text.Length - 1;
+                    tbxSum.Text = tbxSum.Text.Remove(location, 1);
+                }
+
+                else if(myButton.Content.ToString() == "(" && tbxSum.Text[pos - 1] != '-' &&
+                    tbxSum.Text[pos - 1] != '+' && tbxSum.Text[pos - 1] != '/' 
+                    && tbxSum.Text[pos - 1] != '*')
+                {
+                    string theString = tbxSum.Text;
+                    var aStringBuilder = new StringBuilder(theString);
+                    aStringBuilder.Remove(pos, 0);
+                    aStringBuilder.Insert(pos, "*");
+                    theString = aStringBuilder.ToString();
+                    tbxSum.Text = theString;
+                }
+
+            }
 
             if (myButton.Content.ToString() == "=")
             {
-
                 DataTable dt = new DataTable();
                 string s = tbxSum.Text;
-
-                if (s.Contains("("))
-                {
-                    s = s.Replace("(", "*(");
-                }
 
                 try
                 {
                     var v = dt.Compute(s, "");
                     tbkSum.Text = s + "=" + v.ToString();
-                    lastGoodValue = Convert.ToDouble(v);
                     tbxSum.Text = v.ToString();
                 }
                     
                 catch
                 {
-                    tbxSum.Text = lastGoodValue.ToString();
-                    
-                    MessageBox.Show("Invalid Sum, reset to previous valid result");
+                    MessageBox.Show("Invalid Sum!");
                 }
             }
 
@@ -59,12 +89,38 @@ namespace Calcamaloator
             {
                 tbxSum.Text = String.Empty;
                 tbkSum.Text = String.Empty;
-                lastGoodValue = 0;
+                btnDiv.IsEnabled = false;
+                btnMult.IsEnabled = false;
+            }
+
+
+            else if (myButton.Content.ToString() == "BK" && pos > 0)
+            {
+                string theString = tbxSum.Text;
+                var aStringBuilder = new StringBuilder(theString);
+                aStringBuilder.Remove(pos - 1, 1);
+                theString = aStringBuilder.ToString();
+                tbxSum.Text = theString;
+
+                if (tbxSum.Text.Length == 0)
+                {
+                    btnDiv.IsEnabled = false;
+                    btnMult.IsEnabled = false;
+                }
+            }
+
+            else if (myButton.Content.ToString() == "BK" && pos == 0)
+            {
+                tbxSum.Text = String.Empty;
+                btnDiv.IsEnabled = false;
+                btnMult.IsEnabled = false;
             }
 
             else
             {
                 tbxSum.Text += myButton.Content.ToString();
+                tbxSum.Focus();
+                tbxSum.SelectionStart = tbxSum.Text.Length;
             }      
             
         }

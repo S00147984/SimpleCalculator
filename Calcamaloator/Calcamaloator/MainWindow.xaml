@@ -3,27 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="1" Height="23" HorizontalAlignment="Left" Margin="95,146,0,0" Name="button1" VerticalAlignment="Top" Width="25" Click="btnSumClick"/>
-        <Button Content="2" Height="23" HorizontalAlignment="Left" Margin="126,146,0,0" Name="button2" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="3" Height="23" HorizontalAlignment="Left" Margin="157,146,0,0" Name="button3" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="4" Height="23" HorizontalAlignment="Left" Margin="95,117,0,0" Name="button4" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="5" Height="23" HorizontalAlignment="Left" Margin="126,117,0,0" Name="button5" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="6" Height="23" HorizontalAlignment="Left" Margin="157,117,0,0" Name="button6" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="7" Height="23" HorizontalAlignment="Left" Margin="95,88,0,0" Name="button7" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="8" Height="23" HorizontalAlignment="Left" Margin="126,88,0,0" Name="button8" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="9" Height="23" HorizontalAlignment="Left" Margin="157,88,0,0" Name="button9" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="0" Height="23" HorizontalAlignment="Left" Margin="95,175,0,0" Name="button0" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="." Height="23" HorizontalAlignment="Left" Margin="126,175,0,0" Name="btnDec" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="=" Height="23" HorizontalAlignment="Left" Margin="157,175,0,0" Name="btnEqu" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="+" Height="23" HorizontalAlignment="Right" Margin="0,175,290,0" Name="btnAdd" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="-" Height="23" HorizontalAlignment="Right" Margin="0,146,290,0" Name="btnSub" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="*" Height="23" HorizontalAlignment="Right" Margin="0,117,290,0" Name="btnMult" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="/" Height="23" HorizontalAlignment="Right" Margin="0,88,290,0" Name="btnDiv" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="(" Height="23" HorizontalAlignment="Left" Margin="95,59,0,0" Name="btnBrackOpen" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content=")" Height="23" HorizontalAlignment="Left" Margin="126,59,0,0" Name="btnBrackClose" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="%" Height="23" HorizontalAlignment="Right" Margin="0,59,321,0" Name="btnPerc" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <Button Content="CE" Height="23" HorizontalAlignment="Right" Margin="0,59,290,0" Name="btnCE" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="95,30,0,0" Name="tbxSum" VerticalAlignment="Top" Width="120" IsReadOnly="True" />
+        <Button Content="1" Height="23" HorizontalAlignment="Left" Margin="188,146,0,0" Name="button1" VerticalAlignment="Top" Width="25" Click="btnSumClick"/>
+        <Button Content="2" Height="23" HorizontalAlignment="Left" Margin="221,146,0,0" Name="button2" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="3" Height="23" HorizontalAlignment="Left" Margin="252,146,0,0" Name="button3" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="4" Height="23" HorizontalAlignment="Left" Margin="188,117,0,0" Name="button4" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="5" Height="23" HorizontalAlignment="Left" Margin="221,117,0,0" Name="button5" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="6" Height="23" HorizontalAlignment="Left" Margin="252,117,0,0" Name="button6" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="7" Height="23" HorizontalAlignment="Left" Margin="188,88,0,0" Name="button7" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="8" Height="23" HorizontalAlignment="Left" Margin="221,88,0,0" Name="button8" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="9" Height="23" HorizontalAlignment="Left" Margin="252,88,0,0" Name="button9" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="0" Height="23" HorizontalAlignment="Left" Margin="188,175,0,0" Name="button0" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="." Height="23" HorizontalAlignment="Left" Margin="221,175,0,0" Name="btnDec" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="=" Height="23" HorizontalAlignment="Left" Margin="252,175,0,0" Name="btnEqu" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="+" Height="23" HorizontalAlignment="Right" Margin="0,175,195,0" Name="btnAdd" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="-" Height="23" HorizontalAlignment="Right" Margin="0,146,195,0" Name="btnSub" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="*" Height="23" HorizontalAlignment="Right" Margin="0,117,195,0" Name="btnMult" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="/" Height="23" HorizontalAlignment="Right" Margin="0,88,195,0" Name="btnDiv" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="(" Height="23" HorizontalAlignment="Left" Margin="188,59,0,0" Name="btnBrackOpen" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content=")" Height="23" HorizontalAlignment="Left" Margin="221,59,0,0" Name="btnBrackClose" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <Button Content="CE" Height="23" HorizontalAlignment="Right" Margin="0,59,195,0" Name="btnCE" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="188,30,0,0" Name="tbxSum" VerticalAlignment="Top" Width="120" IsReadOnly="True" />
         <TextBlock Height="21" HorizontalAlignment="Left" Margin="12,6,0,0" Name="tbkSum" Text=" " VerticalAlignment="Top" Width="479" />
+        <Button Content="BK" Height="23" HorizontalAlignment="Right" Margin="0,59,226,0" Name="button10" VerticalAlignment="Top" Width="25" Click="btnSumClick" />
     </Grid>
 </Window>
