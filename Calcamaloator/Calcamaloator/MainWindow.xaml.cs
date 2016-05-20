@@ -32,9 +32,10 @@ namespace Calcamaloator
         protected void btnSumClick(object sender, EventArgs e)
         {
             var myButton = (Button)sender;
+            string content = myButton.Content.ToString();
             int pos = tbxSum.Text.Length;
 
-            if (pos == 0 && myButton.Content.ToString() == "BK")
+            if (pos == 0 && content == "BK")
             {
                 btnDiv.IsEnabled = false;
                 btnMult.IsEnabled = false;
@@ -47,13 +48,13 @@ namespace Calcamaloator
             {
 
                 if ((tbxSum.Text[pos - 1] == '/' || tbxSum.Text[pos - 1] == '*') &&
-                    (myButton.Content.ToString() == "/" || myButton.Content.ToString() == "*"))
+                    (content == "/" || content == "*"))
                 {
                     int location = tbxSum.Text.Length - 1;
                     tbxSum.Text = tbxSum.Text.Remove(location, 1);
                 }
 
-                else if(myButton.Content.ToString() == "(" && tbxSum.Text[pos - 1] != '-' &&
+                else if (content == "(" && tbxSum.Text[pos - 1] != '-' &&
                     tbxSum.Text[pos - 1] != '+' && tbxSum.Text[pos - 1] != '/' 
                     && tbxSum.Text[pos - 1] != '*')
                 {
@@ -67,7 +68,7 @@ namespace Calcamaloator
 
             }
 
-            if (myButton.Content.ToString() == "=")
+            if (content == "=")
             {
                 DataTable dt = new DataTable();
                 string s = tbxSum.Text;
@@ -85,7 +86,7 @@ namespace Calcamaloator
                 }
             }
 
-            else if (myButton.Content.ToString() == "CE")
+            else if (content == "CE")
             {
                 tbxSum.Text = String.Empty;
                 tbkSum.Text = String.Empty;
@@ -94,7 +95,7 @@ namespace Calcamaloator
             }
 
 
-            else if (myButton.Content.ToString() == "BK" && pos > 0)
+            else if (content == "BK" && pos > 0)
             {
                 string theString = tbxSum.Text;
                 var aStringBuilder = new StringBuilder(theString);
@@ -109,7 +110,7 @@ namespace Calcamaloator
                 }
             }
 
-            else if (myButton.Content.ToString() == "BK" && pos == 0)
+            else if (content == "BK" && pos == 0)
             {
                 tbxSum.Text = String.Empty;
                 btnDiv.IsEnabled = false;
@@ -118,7 +119,7 @@ namespace Calcamaloator
 
             else
             {
-                tbxSum.Text += myButton.Content.ToString();
+                tbxSum.Text += content;
                 tbxSum.Focus();
                 tbxSum.SelectionStart = tbxSum.Text.Length;
             }      
